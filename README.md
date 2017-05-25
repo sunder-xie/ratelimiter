@@ -1,9 +1,9 @@
 [PLAN - A]单机集中式流控
 ----------------------------------------------
 CentralizedRateLimiter: 流控处理器<br />
-    * 在服务的filter/distributer处使用，调用CentralizedRateLimiter的enter方法检测是否予以放行
-    * 优点：实现简单，精度高，易控制
-    * 缺点：影响filter/distributer的性能，在高吞吐量的服务中容易造成性能瓶颈
+* 在服务的filter/distributer处使用，调用CentralizedRateLimiter的enter方法检测是否予以放行
+* 优点：实现简单，精度高，易控制
+* 缺点：影响filter/distributer的性能，在高吞吐量的服务中容易造成性能瓶颈
 
 
 [PLAN - B]分布式集中服务流控
