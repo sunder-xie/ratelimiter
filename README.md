@@ -14,6 +14,7 @@ CentralizedRateLimiter: 流控处理器<br />
     3. 采用akka-actor通信: client和rateLimiter server之间是异步的，通过actor消息传递，订阅服务的消息使用fire-and-forget模式，流控服务请求消息使用ask模式（类似RPC）
 * RateLimitAgentActor: 分布式部署的流控客户端代理，每个实例映射一个RateLimitAgentActor
 * RateLimitServiceActor: 流控服务的监听控制器，接收并响应client的各类请求
+* ApiSimulator: API流控使用示例，工程入口
 
 [TODO]分布式集中服务流控优化
 ----------------------------------------
